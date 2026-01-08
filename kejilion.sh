@@ -18,40 +18,6 @@ ENABLE_STATS="true"
 
 
 
-
-# 定义一个函数来执行命令
-run_command() {
-	if [ "$zhushi" -eq 0 ]; then
-		"$@"
-	fi
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CheckFirstRun_false() {
-	if grep -q '^permission_granted="false"' /usr/local/bin/k > /dev/null 2>&1; then
-		UserLicenseAgreement
-	fi
-}
-
-
-
-
-
-
-
 ip_address() {
 
 get_public_ip() {
